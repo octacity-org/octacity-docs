@@ -11,11 +11,11 @@ const config: Config = {
     v4: true,
   },
 
-  url: 'https://docs.octacity.dev',
-  baseUrl: '/',
+  url: 'https://octacity-org.github.io',
+  baseUrl: '/octacity-docs/',
 
   organizationName: 'octacity-org',
-  projectName: 'docs',
+  projectName: 'octacity-docs',
 
   onBrokenLinks: 'throw',
 
