@@ -6,7 +6,7 @@ from omniship.plugins.github import GitHubActions, GitHubPages
 
 github = GitHubActions()
 pipeline = Pipeline(targets=[github])
-bun = BunToolchain(version="1.2.4")
+bun = BunToolchain(version="1.4.2")
 
 
 @pipeline.build
