@@ -1,0 +1,8 @@
+{
+  "label": "Release ve Proje Sağlığı",
+  "position": 6,
+  "link": {
+    "type": "generated-index",
+    "description": "Projeyi 'benim makinemde çalışıyor' evresinden güvenilir sürümlere taşıma."
+  }
+}

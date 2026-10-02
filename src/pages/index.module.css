@@ -1,0 +1,133 @@
+.heroBanner {
+  padding: 5rem 0 3.5rem;
+  text-align: center;
+  position: relative;
+  background: linear-gradient(180deg, rgba(99, 102, 241, 0.08) 0%, rgba(99, 102, 241, 0) 100%);
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.title {
+  font-size: 3.25rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.35rem;
+  max-width: 680px;
+  margin: 0 auto 2rem;
+  color: var(--ifm-color-emphasis-700);
+  line-height: 1.5;
+}
+
+.ctaContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.ctaButton {
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  font-size: 1.05rem;
+}
+
+.sectionsSection {
+  padding: 4rem 0 5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  border-radius: 12px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  background: var(--ifm-card-background-color);
+  text-decoration: none !important;
+  color: inherit !important;
+  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.12);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.cardTitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--ifm-color-emphasis-900);
+}
+
+.cardArrow {
+  font-size: 1.25rem;
+  color: var(--ifm-color-primary);
+  transition: transform 0.15s ease;
+}
+
+.card:hover .cardArrow {
+  transform: translateX(4px);
+}
+
+.cardDescription {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--ifm-color-emphasis-600);
+  margin-bottom: 1.25rem;
+  flex-grow: 1;
+}
+
+.cardFooter {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ifm-color-primary);
+}
+
+.manifestoNote {
+  margin-top: 3.5rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: var(--ifm-color-emphasis-100);
+  border-left: 4px solid var(--ifm-color-primary);
+  text-align: center;
+  font-size: 1.05rem;
+  color: var(--ifm-color-emphasis-800);
+}
+
+[data-theme='dark'] .manifestoNote {
+  background-color: rgba(99, 102, 241, 0.08);
+  color: var(--ifm-color-emphasis-900);
+}
+
+@media screen and (max-width: 768px) {
+  .heroBanner {
+    padding: 3rem 1rem 2rem;
+  }
+  .title {
+    font-size: 2.25rem;
+  }
+  .subtitle {
+    font-size: 1.1rem;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
