@@ -10,6 +10,8 @@ Bir projeye karmaşık klasör yapıları kurarak ya da mükemmel mimariyi çize
 
 Yeni başlayan ekiplerin en sık düştüğü tuzak, henüz tek satır iş mantığı yazmadan authentication, mikroservisler, veri tabanı soyutlamaları ve CI pipeline'ları ile haftalar kaybetmektir. Octacity'de tavsiyemiz: Önce çalışan en yalın akışı görün, gerisini ihtiyaca göre inşa edin.
 
+Fikriniz henüz tartışmaya açılmadıysa, önce [Bir proje fikri nasıl paylaşılır?](./proje-fikri-nasil-paylasilir.md) rehberini izleyerek Octacity Discussions üzerinde İngilizce paylaşın. Buradaki adımlar, fikri tartıştıktan sonra ilk çalışan sonucu oluşturmanıza yardımcı olur.
+
 ## Ne zaman?
 
 - Yeni bir fikriniz olduğunda ve ilk adımı atmakta kararsız kaldığınızda,

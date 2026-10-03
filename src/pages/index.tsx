@@ -15,9 +15,9 @@ interface SectionCard {
 const SECTIONS: SectionCard[] = [
   {
     title: 'Projeye Başlamak',
-    description: 'Fikri küçültmek, ilk sürümü tanımlamak ve temiz bir repository kurmak.',
-    link: '/docs/baslangic/projeye-nasil-baslanir',
-    count: '5 Rehber',
+    description: 'Fikri paylaşmak, kapsamı küçültmek, ilk sürümü tanımlamak ve temiz bir repository kurmak.',
+    link: '/docs/baslangic/proje-fikri-nasil-paylasilir',
+    count: '6 Rehber',
   },
   {
     title: 'GitHub ile Çalışmak',
@@ -71,7 +71,7 @@ function HomepageHero() {
         <div className={styles.ctaContainer}>
           <Link
             className={`button button--primary button--lg ${styles.ctaButton}`}
-            to="/docs/baslangic/projeye-nasil-baslanir">
+            to="/docs/baslangic/proje-fikri-nasil-paylasilir">
             Dokümantasyona Başla
           </Link>
         </div>

@@ -74,7 +74,7 @@ const config: Config = {
           label: 'Dokümantasyon',
         },
         {
-          to: '/docs/baslangic/projeye-nasil-baslanir',
+          to: '/docs/baslangic/proje-fikri-nasil-paylasilir',
           label: 'Başlangıç',
           position: 'left',
         },
@@ -103,7 +103,7 @@ const config: Config = {
           items: [
             {
               label: 'Başlangıç',
-              to: '/docs/baslangic/projeye-nasil-baslanir',
+              to: '/docs/baslangic/proje-fikri-nasil-paylasilir',
             },
             {
               label: 'GitHub ile Çalışmak',

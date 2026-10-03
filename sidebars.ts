@@ -8,6 +8,7 @@ const sidebars: SidebarsConfig = {
       collapsible: true,
       collapsed: false,
       items: [
+        'baslangic/proje-fikri-nasil-paylasilir',
         'baslangic/projeye-nasil-baslanir',
         'baslangic/fikri-nasil-kuculturum',
         'baslangic/ilk-surumde-ne-olmali',
