@@ -21,6 +21,7 @@ Ekip projelerinde en büyük risk, herkesin kafasında farklı bir ürün canlan
 3. **İlk birkaç eyleme geçirilebilir Issue'yu açın:** Gelecekteki 50 özelliği değil, bu hafta bitebilecek ilk 3-4 somut işi GitHub Issue olarak tanımlayın.
 4. **Tüm yol haritasını önceden planlamaktan kaçının:** Erken aşamada yapılan detaylı planlar ilk kod yazıldığında genellikle çöker. Esnek ve kısa döngülerle ilerleyin.
 5. **Kararları görünür bir yere kaydedin:** Discord veya WhatsApp sohbetlerinde kaybolacak kararları doğrudan GitHub Issues veya Discussions üzerine taşıyın.
+6. **Karar verme mekanizması kurun (Disagree and Commit):** Teknik fikir ayrılıklarında herkesin %100 aynı fikirde olması beklenmez. Argümanlar dinlendikten sonra bir yol seçilmeli ve tartışma uzatılmadan tüm ekip seçilen karara odaklanarak ilerlemelidir. Kararsızlık ve bitmeyen tartışmalar projeyi yanlış teknik tercihlerden daha hızlı felç eder.
 
 ## İyi örnek
 
@@ -34,8 +35,9 @@ Ekip projelerinde en büyük risk, herkesin kafasında farklı bir ürün canlan
 
 ## Sık yapılan hatalar
 
-- **Gereksiz toplantı maratonları:** Kod yazmak yerine saatlerce durum toplantısı (status meeting) yapmak.
+- **Gereksiz toplantı maratonları:** Saatlerce durum toplantısı (status meeting) yapmak yerine, haftada 2-3 gün chat veya GitHub Discussions üzerinden kısa asenkron durum güncellemeleri paylaşın *(Örn: "Dün ne bitti? Bugün ne yapıyorum? Bloker var mı?")*. Toplantıları sadece çözülemeyen teknik kilitlenmeler için kullanın.
 - **Herkesin her şeye karar vermeye çalışması:** Küçük teknik detaylarda bile uzlaşma arayarak karar mekanizmasını felç etmek.
+- **Sessizce işi bloklamak:** Yoğunluk, sınavlar veya aksilikler yüzünden verilen görevi yapamayacak olmak açık kaynakta çok doğaldır ve sorun teşkil etmez; asıl sorun bunu ekibe haber vermeyip görevi rehin tutarak başkalarının ilerlemesini kilitlemektir. Yapamayacağınızı hissettiğiniz anda durumu ekibe bildirin.
 
 ## Daha fazla bilgi
 

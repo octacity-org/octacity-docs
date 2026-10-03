@@ -32,6 +32,7 @@ Yeni başlayan ekiplerin en sık düştüğü tuzak, henüz tek satır iş mant�
 
 - **Mimaride boğulmak (Architecture Astronaut):** Olmayan yük ve kullanıcılar için önceden aşırı ölçeklenebilir altyapı kurmak.
 - **Problemi yazılı olarak ifade etmemek:** Ekip üyelerinin aklındaki "proje" tanımlarının birbirinden farklı olması.
+- **Localhost'a hapsolmak:** Projenin yalnızca geliştirenin makinesinde çalışması; eksik kurulum adımları, yerel ortam bağımlılıkları veya işletim sistemi farkları yüzünden başka bir bilgisayarda derlenememesi. İlk sürümün başarısı, başka bir geliştiricinin de projeyi temiz bir ortamda ayağa kaldırabilmesiyle ölçülür.
 
 ## Daha fazla bilgi
 

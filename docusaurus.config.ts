@@ -30,7 +30,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          editUrl: 'https://github.com/octacity-org/docs/tree/main/',
+          editUrl: 'https://github.com/octacity-org/octacity-docs/tree/main/',
         },
         blog: false,
         theme: {
@@ -89,7 +89,7 @@ const config: Config = {
           position: 'left',
         },
         {
-          href: 'https://github.com/octacity-org/docs',
+          href: 'https://github.com/octacity-org/octacity-docs',
           label: 'GitHub',
           position: 'right',
         },
@@ -153,7 +153,7 @@ const config: Config = {
             },
             {
               label: 'Dokümantasyon Deposu',
-              href: 'https://github.com/octacity-org/docs',
+              href: 'https://github.com/octacity-org/octacity-docs',
             },
           ],
         },

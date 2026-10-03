@@ -19,16 +19,22 @@ Code review (kod incelemesi), bir denetleme veya hata yakalama sınavı değil; 
 1. **Doğruluğu (correctness) kontrol edin:** Kod vaat ettiği işi doğru yapıyor mu? Uç durumlar (edge cases) düşünülmüş mü?
 2. **Okunabilirlik ve sürdürülebilirliği değerlendirin:** 6 ay sonra bu kodu okuyan biri ne yapıldığını anlayabilir mi? Değişiklik projeye gereksiz karmaşıklık katıyor mu?
 3. **Varsaymak yerine sorun:** Anlamadığınız bir kod parçası gördüyseniz "Bu yanlış" demek yerine "Burada şu yaklaşımı seçmenin özel bir sebebi var mıydı?" diye sorun.
-4. **Engelleyici olanla tavsiyeyi ayırın:**
-   - **Blocking (Zorunlu):** Güvenlik açığı, mantık hatası veya veri kaybı riski taşıyan durumlar.
-   - **Nit / Suggestion (İsteğe bağlı):** "Şöyle yazsak belki daha temiz olabilir ama bu haliyle de birleşebilir" türü kişisel tercihler. Bunların başına açıkça `nit:` veya `öneri:` yazın.
-5. **İyi yapılan şeyleri takdir edin:** Temiz yazılmış bir test veya zarif bir çözüm gördüğünüzde bunu belirtmekten çekinmeyin.
+4. **Yorum etiketleri (Review prefixes) kullanın:** İncelemenin tonunu ve beklentisini netleştirmek için yorumlarınızın başına niyetinizi belirten etiketler ekleyin:
+   - `blocker:` PR birleşmeden önce mutlaka çözülmesi gereken güvenlik açığı, mantık hatası veya veri kaybı riski.
+   - `suggestion:` Alternatif veya daha temiz bir yaklaşım önerisi; tartışmaya açıktır, katı zorunluluk değildir.
+   - `question:` Kodu veya kararın ardındaki mantığı anlamak için sorulan soru (*"Burada bu kütüphaneyi seçmemizin özel bir nedeni var mı?"*).
+   - `nit:` (küçük detay): Kodun çalışmasını etkilemeyen, isteğe bağlı biçim veya isimlendirme tavsiyesi (PR birleşmesine engel değildir).
+   - `praise:` (takdir): Temiz bir test, zarif bir çözüm veya iyi hazırlanmış bir PR'ı kutlayan pozitif geri bildirim.
+5. **İyi yapılan şeyleri takdir edin:** Code review yalnızca eksik bulma yeri değildir; iyi pratikleri övmek ekip motivasyonunu artırır.
 
-## İyi yorum örnekleri
+## Yorum örnekleri
 
 - ❌ *Kötü:* "Bu fonksiyon berbat yazılmış, neden böyle yaptın?"
-- ✅ *İyi:* "Bu döngü büyük dizilerde O(n²) maliyet üretebilir. Giriş verisi büyüdüğünde bellek darboğazı yaşamamak için `Map` kullanmayı düşünebilir miyiz?"
-- ✅ *İyi (İsteğe bağlı):* "`nit:` Değişken adı olarak `res` yerine `userResponse` dersek kodun okunabilirliği biraz daha artabilir, ama PR'ı bloklamıyorum."
+- ✅ *blocker:* `blocker:` Bu döngü kullanıcı girdisini doğrudan SQL içine yerleştiriyor, SQL injection riskine karşı parametreli sorgu kullanmalıyız.
+- ✅ *suggestion:* `suggestion:` Veri kümesi büyüdüğünde O(n²) maliyeti önlemek adına burada `Array.find` yerine bir `Map` kurgulayabiliriz.
+- ✅ *question:* `question:` `maxRetries` değerini 3 olarak seçmişiz; bu üçüncü parti servisin rate limit kurallarıyla uyumlu mu?
+- ✅ *nit:* `nit:` Değişken adı olarak `res` yerine `userResponse` dersek fonksiyon içi okunabilirlik biraz daha artabilir, birleştirmeyi engellemiyorum.
+- ✅ *praise:* `praise:` Uç durum testleri çok kapsamlı hazırlanmış, eline sağlık!
 
 ## Sık yapılan hatalar
 

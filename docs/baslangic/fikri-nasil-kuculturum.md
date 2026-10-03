@@ -22,6 +22,7 @@ Açık kaynak projelerin yarım kalmasının bir numaralı sebebi teknik yetersi
 2. **Opsiyonel entegrasyonları silin:** OAuth, Slack bildirimleri, çoklu veritabanı desteği veya e-posta gönderimi ilk aşamada çekirdek probleme hizmet etmiyorsa derhal kapsam dışına çıkarın.
 3. **"Platform" yanılgısından kaçının:** İlk günden eklenti (plugin) mimarisi kurmaya çalışmayın. Henüz kendisi çalışmayan bir sistem için eklenti mimarisi tasarlamak erken optimizasyondur.
 4. **Kullanıcı ve durum kısıtlaması koyun:** İlk sürümü "herkes ve her durum" için değil, belirli tek bir işletim sistemi veya tek bir dosya formatı için hazırlayın.
+5. **Fikirleri silmeyin, bir havuzda saklayın:** Fikri küçültmek, ekipten gelen değerli önerileri çöpe atmak anlamına gelmez. Şu an yapılmayacak fakat gelecekte projeye değer katacak fikirler için "İleride Düşünülecekler" (Icebox / Future Ideas) başlıklı bir GitHub Issue veya Discussion açarak bunları kaydedin. Böylece hem katkı sağlayanların motivasyonu korunur hem de ilk sürümün odağı dağılmaz.
 
 ## Kapsam karşılaştırması
 

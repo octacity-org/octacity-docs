@@ -23,8 +23,27 @@ Bir Issue açarken "hata var çalışmıyor" veya "şunu eklesek iyi olur" gibi 
 3. **Beklenen davranışı belirtin:** Ne olması gerekiyordu?
 4. **Yeniden üretme adımlarını (Reproduction steps) yazın:** Hata bildiriyorsanız adım adım nasıl tetikleneceğini belirtin.
 5. **Kapsamı daraltın:** O issue içinde neyin yapılacağı kadar, **neyin yapılmayacağını** da belirtmek kapsam kaymasını önler.
+6. **Üzerinde çalışacaksanız niyetinizi belirtin:** Açık kaynakta en sık yaşanan problemlerden biri, iki geliştiricinin aynı sorunu çözmek için birbirinden habersiz paralel emek harcamasıdır. Bir Issue üzerinde çalışmaya başlamadan önce yorum atarak niyetinizi belirtin (*"Bu sorun üzerinde çalışıyorum"* veya *"I'd like to work on this"*) ve kendinizi görevli (assignee) olarak atayın.
 
-## İyi örnek
+## Karşılaştırma
+
+<div className="comparison-grid">
+  <div className="comparison-box comparison-bad">
+    <div className="comparison-title">❌ Baştan Savma Issue</div>
+    <p><strong>Başlık:</strong> hata var çalışmıyor</p>
+    <p><strong>İçerik:</strong> <em>"Projeyi başlattım ama hata verip kapandı, acil bakar mısınız?"</em></p>
+    <small>⚠️ Hatanın nerede olduğu, işletim sistemi, çalışma ortamı, hata logları ve adımları tamamen belirsizdir.</small>
+  </div>
+
+  <div className="comparison-box comparison-good">
+    <div className="comparison-title">✅ Octacity Standardında Issue</div>
+    <p><strong>Başlık:</strong> fix: geçersiz JSON konfigürasyonunda sessiz çökme</p>
+    <p><strong>İçerik:</strong> Hatanın oluştuğu fonksiyon, adım adım yeniden üretme yolu ve beklenen çıktı net olarak listelenmiştir.</p>
+    <small>✓ Başka bir geliştirici soru sormadan doğrudan çözüme odaklanabilir.</small>
+  </div>
+</div>
+
+## Örnek Issue şablonu
 
 ```markdown
 ### Problem
@@ -43,8 +62,9 @@ Bu issue kapsamında otomatik JSON düzeltme (auto-fix) yapılmayacaktır; yaln�
 
 ## Sık yapılan hatalar
 
-- **Sadece ekran görüntüsü bırakıp açıklama yazmamak:** Ekran görüntüsü bağlamı açıklamaz.
+- **Sadece ekran görüntüsü bırakıp açıklama yazmamak:** Ekran görüntüsü arama motorunda indekslenemez ve bağlamı açıklamaz.
 - **Bir Issue içine 5 farklı iş sıkıştırmak:** Tamamlanması aylar süren "mega issue"lar açmak yerine işi parçalara bölün.
+- **Haber vermeden çalışmaya başlamak:** Issue altında niyet belirtmeden haftalarca kod yazıp ansızın PR göndermek; başka birinin de aynı işi tamamlamış olması durumunda boşa çaba yaratır.
 
 ## Daha fazla bilgi
 

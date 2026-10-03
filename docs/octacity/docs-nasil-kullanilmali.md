@@ -22,7 +22,7 @@ Buradaki metinler katı kanunlar ya da bağlayıcı kurallar bütünü değildir
 1. **Duruma uyan en sade çözümü seçin:** Projeniz 2 kişilik erken aşama bir projeyse, 50 kişilik ekiplerin bürokratik pratiklerini uygulamaya çalışmayın.
 2. **Soruyu doğrudan cevaplayın:** Bir rehberi okurken teorik tartışmalara boğulmak yerine, "şu anda ne yapmalıyım?" sorusuna yanıt arayın.
 3. **Gerçek hayat tecrübesini üstün tutun:** Projenizde uyguladığınız bir pratik buradaki öneriden daha iyi sonuç verdiyse, rehberi körü körüne takip etmek yerine deneyiminize güvenin.
-4. **Katkı sağlayın:** Eğer bir rehber eksikse, güncelliğini yitirmişse veya yeni bir tecrübe kazandıysanız, dokümantasyonu kod gibi ele alıp Pull Request açarak güncelleyin.
+4. **Katkı sağlayın:** Eğer bir rehber eksikse, güncelliğini yitirmişse veya yeni bir tecrübe kazandıysanız, dokümantasyonu kod gibi ele alıp güncelleyin. Her rehber sayfasının en altında yer alan **"Bu sayfayı düzenle"** bağlantısını kullanarak doğrudan o sayfanın Markdown kaynağına ulaşabilir veya [octacity-org/octacity-docs](https://github.com/octacity-org/octacity-docs) deposunu forklayıp bir Pull Request açabilirsiniz. Ayrıntılı katkı adımları ve şablonlar için projedeki [CONTRIBUTING.md](https://github.com/octacity-org/octacity-docs/blob/main/CONTRIBUTING.md) belgesini inceleyin.
 
 ## İyi bir kullanım örneği
 

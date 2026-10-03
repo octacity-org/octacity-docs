@@ -19,11 +19,12 @@ README bir tanıtım broşürü değil, pratik bir kullanım ve giriş kapısıd
 
 1. **Başlık ve 1 Cümlelik Tanım:** Projenin ne yaptığını dolandırmadan söyleyin.
 2. **Neden Var? (Problem):** Hangi sorunu çözüyor?
-3. **Kurulum (Installation):** Tek satırlık komutlarla ortamın hazırlanması.
-4. **Hızlı Başlangıç (Quickstart / Usage):** En yaygın kullanım senaryosunu gösteren minimal kod veya CLI komutu.
-5. **Proje Durumu (Status):** Proje v0.1 mi, deneysel mi yoksa üretimde kullanılabilir mi?
-6. **Katkı (Contributing):** Yeni bir geliştiricinin nasıl katkı verebileceğine dair kısa bir yönlendirme.
-7. **Lisans:** Lisans türünün belirtilmesi.
+3. **Gereksinimler (Prerequisites):** Çalışma ortamı ve sürüm beklentileri (örn. Node.js >= 20, Python >= 3.12, Docker vb.). Sürüm uyumsuzluğu, yeni bir geliştiricinin projeden vazgeçmesine neden olan en yaygın sorundur.
+4. **Kurulum (Installation):** Tek satırlık komutlarla ortamın hazırlanması.
+5. **Hızlı Başlangıç (Quickstart / Usage):** En yaygın kullanım senaryosunu gösteren minimal kod veya CLI komutu.
+6. **Proje Durumu (Status):** Proje v0.1 mi, deneysel mi yoksa üretimde kullanılabilir mi?
+7. **Katkı (Contributing):** Yeni bir geliştiricinin nasıl katkı verebileceğine dair kısa bir yönlendirme.
+8. **Lisans:** Lisans türünün belirtilmesi.
 
 ## İyi örnek
 
@@ -31,6 +32,10 @@ README bir tanıtım broşürü değil, pratik bir kullanım ve giriş kapısıd
 # fast-slug
 
 Türkçe ve özel karakterleri URL dostu slug metinlerine dönüştüren hafif TypeScript kütüphanesi.
+
+## Gereksinimler
+
+- Node.js >= 18.0.0
 
 ## Kurulum
 
