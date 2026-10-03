@@ -19,7 +19,7 @@ Haftalarca süren ve yüzlerce dosya değiştiren devasa iş paketleri, code rev
 ## Nasıl yapmalıyım?
 
 1. **Araştırmayı (Spike) geliştirmeden ayırın:** Bilmediğiniz bir kütüphaneyi veya mimariyi araştırmak için önce küçük bir prototip/araştırma issue'su açın; araştırmayı asıl geliştirmenin içine karıştırmayın.
-2. **Altyapı ile iş mantığını ayırın:** Gerekli veri modellerini veya yardımcı fonksiyonları eklemek ayrı bir PR, bunları kullanan arayüzü eklemek ayrı bir PR olabilir.
+2. **Her adımda kullanılabilir bir sonuç hedefleyin:** Bir kullanıcı davranışı için gereken veri modeli, API ve arayüz değişikliklerini aynı küçük PR içinde tamamlayın. Altyapı değişikliği tek başına doğrulanabilen bir fayda sağlıyorsa ayrı bir PR olabilir; yalnızca ileride kullanılacak yardımcı kod eklemek için işi katmanlara bölmeyin.
 3. **Bağımlılıkları görünür kılın:** Hangi işin diğerini beklediğini açıkça belirtin. Örneğin: `#12 tamamlandıktan sonra başlanabilir`.
 4. **Her parçanın bağımsız çalışabilir olmasını sağlayın:** Kod tabanına eklenen her parça projeyi kırık (broken) durumda bırakmamalıdır.
 
@@ -28,11 +28,11 @@ Haftalarca süren ve yüzlerce dosya değiştiren devasa iş paketleri, code rev
 > **Büyük Görev:** "Kullanıcı profil sayfası ve avatar yükleme sistemi."
 >
 > **Parçalanmış Adımlar:**
-> 1. `Issue 1:` Avatar için S3/dosya yükleme yardımcı modülünün (`uploadAvatar`) ve birim testlerinin yazılması.
-> 2. `Issue 2:` Kullanıcı modeli üzerine avatar URL alanının eklenmesi ve API endpoint'inin hazırlanması.
-> 3. `Issue 3:` Frontend profil sayfasına avatar yükleme bileşeninin eklenmesi ve API'ye bağlanması.
+> 1. `Issue 1:` Kullanıcı kendi profil sayfasında adını ve varsayılan avatarını görebilir. Gerekli veri okuma, API ve arayüz akışı birlikte tamamlanır ve test edilir.
+> 2. `Issue 2:` Kullanıcı profil sayfasından bir JPEG avatar yükleyebilir ve sayfayı yeniden açtığında aynı avatarı görür. Dosya türü ve boyut kontrolleri, saklama, API ve arayüz akışı birlikte tamamlanır ve test edilir.
+> 3. `Issue 3:` Kullanıcı yüklediği avatarı kaldırıp varsayılan avatara dönebilir. Silme, profil kaydını güncelleme ve arayüz akışı birlikte tamamlanır ve test edilir.
 
-Her adım bağımsız olarak incelenebilir, test edilebilir ve ana dala (main branch) sorunsuz şekilde birleştirilebilir.
+Her adım kullanıcıya çalışan bir sonuç sunar ve ana dala (main branch) birleştirildiğinde proje kullanılabilir kalır. İkinci adım birinciye, üçüncü adım ikinciye dayanır; bu bağımlılıklar Issue'larda açıkça belirtilir.
 
 ## Sık yapılan hatalar
 

@@ -31,8 +31,7 @@ Bir rehber yazarken veya güncellerken şu prensipleri göz önünde bulundurun:
    bun run build
    bun run typecheck
    ```
-   Kırık iç link (broken links) olmadığından emin olun.
-5. **Pull Request:** Yaptığınız değişikliğin gerekçesini açıklayan sade bir PR açın.
+5. **Pull Request:** Yaptığınız değişikliğin gerekçesini açıklayan sade bir PR açın. Commit mesajlarınızda [Conventional Commits](./docs/github/iyi-pr-nasil-hazirlanir.md#commit-standartlari-conventional-commits) formatını uygulayın.
 
 ---
 

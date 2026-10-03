@@ -33,8 +33,7 @@ When authoring or updating a guide, keep the following principles in mind:
    bun run build
    bun run typecheck
    ```
-   Ensure there are zero broken internal links.
-5. **Open a Pull Request:** Submit a clear, descriptive PR explaining the motivation and changes.
+5. **Open a Pull Request:** Submit a clear, descriptive PR explaining the motivation and changes. Follow [Conventional Commits](https://www.conventionalcommits.org/) for your commit messages.
 
 ---
 

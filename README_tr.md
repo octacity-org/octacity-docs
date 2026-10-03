@@ -4,7 +4,7 @@ Açık kaynak proje geliştirirken “bunu nasıl yapmalıyım?” sorusuna prat
 
 > 🌐 English version: [README.md](./README.md).
 
-Canlı site: [docs.octacity.dev](https://docs.octacity.dev)
+Canlı site: [Octacity Docs](https://octacity-org.github.io/octacity-docs/)
 
 ---
 

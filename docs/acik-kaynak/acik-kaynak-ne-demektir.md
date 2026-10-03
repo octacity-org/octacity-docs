@@ -6,15 +6,17 @@ sidebar_position: 1
 
 # Açık kaynak proje ne demektir?
 
-Bir projenin kodunu GitHub'a herkese açık (public) olarak yüklemek, onu tek başına **açık kaynak bir proje** yapmaz. Açık kaynak; **geçerli bir lisans, şeffaf bir katkı patikası ve iş birliğine dayalı bir iletişim kültürü** bütünüdür.
+Bir projenin kodunu GitHub'a herkese açık (public) olarak yüklemek, onu tek başına **açık kaynak bir proje** yapmaz. Kaynak kodun erişilebilir olması ve lisansın [Open Source Definition](https://opensource.org/osd) ölçütlerine uygun kullanım, değiştirme ve dağıtım haklarını tanıması gerekir.
 
-Lisansı olmayan veya katkıya tamamen kapalı bir depo sadece "halka açık kaynak kod"dur (source-available / public code).
+Lisansı olmayan bir depoda kodun görünür olması, bu hakların verildiği anlamına gelmez. Buna karşılık, açık kaynak lisansıyla yayımlanan bir proje dışarıdan katkı kabul etmese de açık kaynak olabilir. Şeffaf bir katkı patikası ve iş birliğine dayalı iletişim, projenin toplulukla gelişmesini destekleyen iyi pratiklerdir; açık kaynak olmanın şartı değildir.
 
 ## Ne zaman?
 
 - Projenizi dış dünyaya açarken veya bir açık kaynak projeye ilk kez katkıda bulunurken.
 
-## Bir projeyi açık kaynak yapan temel unsurlar
+## Lisans ve önerilen proje pratikleri
+
+Aşağıdaki listede lisans, açık kaynak haklarını tanımlar. Diğer maddeler ise projenin ihtiyacına göre uygulanabilecek katkı, güvenlik ve bakım pratikleridir.
 
 1. **Açık Kaynak Lisansı:** Kodun başkaları tarafından kullanılmasına, değiştirilmesine ve dağıtılmasına yasal izin veren, [Open Source Initiative (OSI)](https://opensource.org/licenses) onaylı bir lisans. *(Not: Buradaki açıklamalar genel yönlendirme amaçlıdır, hukuki tavsiye niteliği taşımaz; lisans yükümlülükleri kullanım, türetme ve dağıtım koşullarına göre farklılık gösterebilir).* İki temel lisans yaklaşımı öne çıkar:
    - **Permissive (İzin verici - örn. MIT, Apache 2.0):** Geniş serbestlik tanır; orijinal telif ve lisans bildirimini korumak şartıyla kodun kapalı kaynak veya ticari yazılımlarda da kullanımına imkan verir.

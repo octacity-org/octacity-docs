@@ -24,7 +24,46 @@ Bir PR'ın kalitesi sadece yazdığınız kodla değil, o kodu inceleyecek takı
 5. **Görseller ekleyin:** Arayüz (UI) veya çıktı değişikliği varsa mutlaka "Öncesi / Sonrası" ekran görüntüsü veya kısa bir GIF ekleyin.
 6. **Erken geri bildirim için Draft PR kullanın:** İşiniz henüz tamamlanmadıysa fakat yönünüzü ekiple erkenden paylaşmak veya CI sonuçlarını görmek istiyorsanız PR'ı **Draft** (Taslak) olarak açın. Bu, *"üzerinde çalışıyorum, henüz birleştirmeye hazır değil"* sinyali verir.
 7. **Kendi kodunuzu kendiniz inceleyin (Self-review):** PR'ı başkasına göndermeden önce GitHub'daki "Files changed" sekmesini sanki bir başkasının kodunu inceliyormuş gibi baştan sona okuyun. Unutulmuş `console.log` ifadelerini, gereksiz biçimlendirme farklarını ve geçici yorum satırlarını temizleyin.
-8. **Anlaşılır commit mesajları yazın:** `asdf`, `fix`, `deneme` gibi anlamsız commit'ler tarihçeyi çöpe çevirir. Tercihen Conventional Commits (`feat(auth): ...`, `fix(ui): ...`) formatını kullanın ve her commit'in mantıksal bir adımı temsil etmesini sağlayın.
+8. **Anlaşılır commit mesajları yazın:** `asdf`, `fix`, `deneme` gibi anlamsız commit'ler tarihçeyi çöpe çevirir. Aşağıda detaylandırılan Conventional Commits formatını benimseyin ve her commit'in tek bir mantıksal adımı temsil etmesini sağlayın.
+
+## Commit Standartları (Conventional Commits)
+
+Açık kaynak projelerde commit geçmişi, kod tabanının yaşayan günlüğüdür. Temiz ve standart bir commit geçmişi; `git bisect` ile geriye dönük hata ayıklamayı, otomatik sürüm notları (changelog) üretmeyi ve PR inceleme süreçlerini kolaylaştırır.
+
+Octacity dokümanlarında ve projelerinde yaygın kabul gören [Conventional Commits](https://www.conventionalcommits.org/) standardı önerilir:
+
+```text
+<tip>(<isteğe bağlı kapsam>): <kısa açıklama>
+
+[isteğe bağlı detaylı gövde]
+
+[isteğe bağlı dipnotlar / kapatılan issue'lar]
+```
+
+### Yaygın Tip Etiketleri
+
+| Tip | Ne Zaman Kullanılır? | Örnek |
+|---|---|---|
+| `feat` | Yeni bir özellik veya işlev eklendiğinde | `feat(auth): add GitHub OAuth support` |
+| `fix` | Bir hata veya beklenmeyen davranış düzeltildiğinde | `fix(parser): handle trailing commas in config` |
+| `docs` | Yalnızca dokümantasyon değişikliği yapıldığında | `docs(readme): add node prerequisite section` |
+| `refactor` | Ne hata düzelten ne de özellik ekleyen kod düzenlemelerinde | `refactor(db): extract connection pool to separate module` |
+| `test` | Test ekleme veya mevcut testleri güncelleme durumunda | `test(api): add integration test for 401 responses` |
+| `perf` | Performansı artıran kod iyileştirmelerinde | `perf(search): cache index to reduce query latency` |
+| `chore` | Bağımlılıklar, CI veya yardımcı araç değişikliklerinde | `chore(deps): update bun to v1.4.2` |
+| `style` | Kodun çalışmasını etkilemeyen biçimlendirme / boşluk düzeltmelerinde | `style(css): align grid margins` |
+
+### İyi Bir Commit Mesajı İçin Altın Kurallar
+
+1. **Emir kipi (Imperative mood) kullanın:** Mesajınız *"added feature"* veya *"adds feature"* değil, bir komut gibi *"add feature"* olmalıdır (*"Bu commit uygulandığında projeye ne yapar?"* sorusunun yanıtıdır).
+2. **Küçük harfle başlayın ve sonuna nokta koymayın:** `feat(ui): add dark mode switch` (✅), `Feat(ui): Add dark mode switch.` (❌).
+3. **Atomik commit prensibi:** Her commit tek bir mantıksal değişikliği temsil etmelidir. 5 alakasız görevi tek bir devasa commit'e sıkıştırmayın; aynı zamanda kodu bozan yarım adımları da ayrı commit yapmayın.
+4. **Kırıcı değişiklikler (Breaking Changes):** Geriye dönük uyumluluğu bozan bir değişiklik varsa tipin sonuna `!` ekleyin veya gövdede belirtin:
+   ```text
+   feat(api)!: remove deprecated v1 user endpoint
+
+   BREAKING CHANGE: The /v1/users endpoint has been removed. Use /v2/users instead.
+   ```
 
 ## Karşılaştırma
 

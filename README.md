@@ -5,7 +5,7 @@ A practical, opinionated knowledge base for building open-source projects.
 > 🌐 **Note**: The documentation content itself is written Turkish-first to serve the local developer community, while repositories and codebases remain English-first.  
 > For the Turkish version of this document, see [README_tr.md](./README_tr.md).
 
-Live site: [docs.octacity.dev](https://docs.octacity.dev)
+Live site: [Octacity Docs](https://octacity-org.github.io/octacity-docs/)
 
 ---
 
