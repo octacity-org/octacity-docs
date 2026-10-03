@@ -26,7 +26,7 @@ Buradaki metinler katı kanunlar ya da bağlayıcı kurallar bütünü değildir
 
 ## İyi bir kullanım örneği
 
-> Bir geliştirici, projesine gelen büyük bir PR karşısında ne yapacağını bilemediğinde "Maintainer Rehberi" bölümündeki *Bir contribution nasıl değerlendirilir?* ve *Ne zaman hayır denir?* rehberlerine bakar. Oradaki kontrol listesini referans alarak PR sahibine yapıcı, net ve gerekçeli bir geri bildirim iletir.
+> Bir geliştirici, projesine gelen büyük bir PR karşısında ne yapacağını bilemediğinde [Maintainer Ne Yapar?](../maintainer/maintainer-ne-yapar.md) ve [Code Review Nasıl Yapılır?](../github/code-review-nasil-yapilir.md) rehberlerine bakar. Oradaki kontrol listesini ve etiketleme standartlarını referans alarak PR sahibine yapıcı, net ve gerekçeli bir geri bildirim iletir.
 
 ## Sık yapılan hatalar
 

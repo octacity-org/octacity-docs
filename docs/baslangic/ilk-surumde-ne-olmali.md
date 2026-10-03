@@ -37,9 +37,9 @@ v0.1'in eksiksiz olması beklenmez; ancak **kullanılabilir** olması şarttır.
 
 ## İyi örnek
 
-> Bir API mocklama aracı için v0.1:
+> Temsili bir API mocklama aracı (`mock-api`) için v0.1:
 > - Bir JSON dosyasından okuyup yerel HTTP sunucusu açar (`GET` isteklerine yanıt verir).
-> - README içinde `npm install -g mock-api` ve `mock-api data.json` komutları açıklanmıştır.
+> - README içinde kurulum ve temel çalıştırma talimatları (örn. `mock-api data.json`) açıklanmıştır.
 > - `POST`, `PUT`, dinamik veri üretimi ve GUI arayüzü v0.2 ve sonrasına bırakılmıştır.
 
 ## Sık yapılan hatalar

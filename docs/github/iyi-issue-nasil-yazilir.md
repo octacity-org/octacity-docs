@@ -23,7 +23,7 @@ Bir Issue açarken "hata var çalışmıyor" veya "şunu eklesek iyi olur" gibi 
 3. **Beklenen davranışı belirtin:** Ne olması gerekiyordu?
 4. **Yeniden üretme adımlarını (Reproduction steps) yazın:** Hata bildiriyorsanız adım adım nasıl tetikleneceğini belirtin.
 5. **Kapsamı daraltın:** O issue içinde neyin yapılacağı kadar, **neyin yapılmayacağını** da belirtmek kapsam kaymasını önler.
-6. **Üzerinde çalışacaksanız niyetinizi belirtin:** Açık kaynakta en sık yaşanan problemlerden biri, iki geliştiricinin aynı sorunu çözmek için birbirinden habersiz paralel emek harcamasıdır. Bir Issue üzerinde çalışmaya başlamadan önce yorum atarak niyetinizi belirtin (*"Bu sorun üzerinde çalışıyorum"* veya *"I'd like to work on this"*) ve kendinizi görevli (assignee) olarak atayın.
+6. **Üzerinde çalışacaksanız niyetinizi belirtin:** Açık kaynakta en sık yaşanan problemlerden biri, iki geliştiricinin aynı sorunu çözmek için birbirinden habersiz paralel emek harcamasıdır. Bir Issue üzerinde çalışmaya başlamadan önce yorum atarak niyetinizi belirtin (*"Bu sorun üzerinde çalışmak istiyorum"* veya *"I'd like to work on this"*). Depoda yazma yetkiniz varsa kendinizi görevli (assignee) olarak atayın; dışarıdan katkı veriyorsanız maintainer'dan sizi atamasını isteyin.
 
 ## Karşılaştırma
 

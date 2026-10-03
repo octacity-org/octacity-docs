@@ -26,7 +26,7 @@ v0.1'in eksiksiz, mükemmel veya tüm uç durumları kapsayan bir yazılım olma
 
 - "Tasarım henüz istediğim kadar şık değil."
 - "Birim test kapsamı (coverage) henüz %90 olmadı."
-- "Windows üzerinde henüz test etmedik." (README'ye sadece Linux/macOS desteklendiğini not düşüp sürümü çıkartın).
+- "Tüm olası ortamlarda ve platformlarda kusursuz çalışana kadar bekleyelim." (Hedef platformlarınızı açıkça sınırlayın —örneğin sadece Linux/macOS veya Node 20+— o kapsamı test edip sürümü çıkarın; diğer ortamları yol haritasına bırakın).
 - "Birkaç özellik daha ekleyip öyle çıkalım."
 
 ## İyi örnek
@@ -42,7 +42,7 @@ v0.1'in eksiksiz, mükemmel veya tüm uç durumları kapsayan bir yazılım olma
 > - `octacity check`: Yapılandırma dosyalarını doğrular.
 > 
 > ### Bilinen Kısıtlamalar
-> - Henüz Windows işletim sistemi desteklenmemektedir (v0.2 hedefi).
+> - İlk sürümde yalnızca macOS ve Linux ortamları desteklenmektedir (Windows desteği planlanmaktadır).
 > - Eklenti mimarisi aktif değildir.
 > ```
 

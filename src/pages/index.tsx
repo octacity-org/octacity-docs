@@ -44,8 +44,8 @@ const SECTIONS: SectionCard[] = [
     count: 'Rehber',
   },
   {
-    title: 'Release ve Proje Sağlığı',
-    description: 'v0.1 zamanlaması, versiyonlama, sürüm notları ve teknik borç yönetimi.',
+    title: 'Release ve Sürüm Yönetimi',
+    description: 'İlk sürüm (v0.1) zamanlaması, hazır olma kriterleri ve sürüm notu paylaşımı.',
     link: '/docs/release/v01-ne-zaman-cikar',
     count: 'Rehber',
   },

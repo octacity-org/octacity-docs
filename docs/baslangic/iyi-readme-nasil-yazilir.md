@@ -28,8 +28,10 @@ README bir tanıtım broşürü değil, pratik bir kullanım ve giriş kapısıd
 
 ## İyi örnek
 
+Aşağıda temsili bir kütüphane (`fast-slug`) senaryosu üzerinden hazırlanmış minimalist ve temiz bir README şablonu yer almaktadır (örnekteki paket ve komutlar temsilidir):
+
 ````markdown
-# fast-slug
+# fast-slug (Temsili Örnek)
 
 Türkçe ve özel karakterleri URL dostu slug metinlerine dönüştüren hafif TypeScript kütüphanesi.
 
@@ -68,4 +70,4 @@ MIT
 
 ## Daha fazla bilgi
 
-Daha geniş bir katkı rehberi oluşturmak için [CONTRIBUTING.md nasıl yazılır?](../acik-kaynak/acik-kaynak-ne-demektir.md) bölümünü inceleyin.
+Açık kaynak projelerde standart dosya yapısı (CONTRIBUTING, LICENSE vb.) hakkında bilgi almak için [Açık kaynak proje ne demektir?](../acik-kaynak/acik-kaynak-ne-demektir.md) bölümünü inceleyin.
