@@ -19,18 +19,36 @@ Code review (kod incelemesi), bir denetleme veya hata yakalama sınavı değil; 
 1. **Doğruluğu (correctness) kontrol edin:** Kod vaat ettiği işi doğru yapıyor mu? Uç durumlar (edge cases) düşünülmüş mü?
 2. **Okunabilirlik ve sürdürülebilirliği değerlendirin:** 6 ay sonra bu kodu okuyan biri ne yapıldığını anlayabilir mi? Değişiklik projeye gereksiz karmaşıklık katıyor mu?
 3. **Varsaymak yerine sorun:** Anlamadığınız bir kod parçası gördüyseniz "Bu yanlış" demek yerine "Burada şu yaklaşımı seçmenin özel bir sebebi var mıydı?" diye sorun.
-4. **Yorum etiketleri (Review prefixes) kullanın:** İncelemenin tonunu ve beklentisini netleştirmek için yorumlarınızın başına niyetinizi belirten etiketler ekleyin:
-   - `blocker:` PR birleşmeden önce mutlaka çözülmesi gereken güvenlik açığı, mantık hatası veya veri kaybı riski.
-   - `suggestion:` Alternatif veya daha temiz bir yaklaşım önerisi; tartışmaya açıktır, katı zorunluluk değildir.
-   - `question:` Kodu veya kararın ardındaki mantığı anlamak için sorulan soru (*"Burada bu kütüphaneyi seçmemizin özel bir nedeni var mı?"*).
-   - `nit:` (küçük detay): Kodun çalışmasını etkilemeyen, isteğe bağlı biçim veya isimlendirme tavsiyesi (PR birleşmesine engel değildir).
-   - `praise:` (takdir): Temiz bir test, zarif bir çözüm veya iyi hazırlanmış bir PR'ı kutlayan pozitif geri bildirim.
+4. **Yorum etiketleri (Review prefixes) kullanın:** İncelemenin tonunu ve beklentisini netleştirmek için yorumlarınızın başına niyetinizi belirten etiketler ekleyin (aşağıdaki tabloya bakın).
 5. **İyi yapılan şeyleri takdir edin:** Code review yalnızca eksik bulma yeri değildir; iyi pratikleri övmek ekip motivasyonunu artırır.
+
+### Yorum etiketleri
+
+| Etiket | Anlamı | Birleşmeyi engeller mi? |
+| :--- | :--- | :---: |
+| `blocker:` | PR birleşmeden önce mutlaka çözülmesi gereken güvenlik açığı, mantık hatası veya veri kaybı riski. | 🛑 Evet |
+| `suggestion:` | Alternatif veya daha temiz bir yaklaşım önerisi; tartışmaya açıktır, katı zorunluluk değildir. | Hayır |
+| `question:` | Kodu veya kararın ardındaki mantığı anlamak için sorulan soru (*"Burada bu kütüphaneyi seçmemizin özel bir nedeni var mı?"*). | Hayır |
+| `nit:` | Küçük detay: kodun çalışmasını etkilemeyen, isteğe bağlı biçim veya isimlendirme tavsiyesi. | Hayır |
+| `praise:` | Takdir: temiz bir test, zarif bir çözüm veya iyi hazırlanmış bir PR'ı kutlayan pozitif geri bildirim. | Hayır |
 
 ## Yorum örnekleri
 
-- ❌ *Kötü:* "Bu fonksiyon berbat yazılmış, neden böyle yaptın?"
-- ✅ *blocker:* `blocker:` Bu döngü kullanıcı girdisini doğrudan SQL içine yerleştiriyor, SQL injection riskine karşı parametreli sorgu kullanmalıyız.
+<div className="comparison-grid">
+  <div className="comparison-box comparison-bad">
+    <div className="comparison-title">❌ Kişiyi hedef alan</div>
+    <p><em>"Bu fonksiyon berbat yazılmış, neden böyle yaptın?"</em></p>
+    <small>⚠️ Neyin yanlış olduğunu ve beklentiyi söylemez; savunmaya iter.</small>
+  </div>
+  <div className="comparison-box comparison-good">
+    <div className="comparison-title">✅ Değişikliğe odaklanan</div>
+    <p><code>blocker:</code> Bu döngü kullanıcı girdisini doğrudan SQL içine yerleştiriyor, SQL injection riskine karşı parametreli sorgu kullanmalıyız.</p>
+    <small>✓ Sorun, gerekçe ve beklenti nettir.</small>
+  </div>
+</div>
+
+Diğer etiketlerle örnekler:
+
 - ✅ *suggestion:* `suggestion:` Veri kümesi büyüdüğünde O(n²) maliyeti önlemek adına burada `Array.find` yerine bir `Map` kurgulayabiliriz.
 - ✅ *question:* `question:` `maxRetries` değerini 3 olarak seçmişiz; bu üçüncü parti servisin rate limit kurallarıyla uyumlu mu?
 - ✅ *nit:* `nit:` Değişken adı olarak `res` yerine `userResponse` dersek fonksiyon içi okunabilirlik biraz daha artabilir, birleştirmeyi engellemiyorum.

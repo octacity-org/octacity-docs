@@ -18,16 +18,37 @@ v0.1'in eksiksiz, mükemmel veya tüm uç durumları kapsayan bir yazılım olma
 
 ## v0.1 için hazır olma kriterleri
 
+<Checklist
+  id="v01-hazir"
+  title="v0.1 hazır mı?"
+  items={[
+    'Çekirdek vaat tek bir ana senaryoda hatasız çalışıyor',
+    'Kurulum başka bir bilgisayarda denendi',
+    'Kritik kısıtlar README\'de yazılı',
+    'v0.1.0 Git tag\'i oluşturuldu',
+    'GitHub Releases üzerinde sürüm notları paylaşıldı',
+  ]}
+/>
+
+<details>
+<summary>Her kriterin açıklaması</summary>
+
 1. **Çekirdek vaat yerine geliyor mu?** Proje bir Markdown dönüştürücü ise, geçerli bir Markdown girdisini hatasız çıktıya dönüştürüyor mu? Evet ise hazırsınız.
 2. **Kritik kısıtlar açıkça yazıldı mı?** "Şu anda sadece UTF-8 dosyalar desteklenmektedir" veya "Yalnızca Node 20+ üzerinde test edilmiştir" gibi kısıtlamaları README'de belirtin. Kullanıcılar bilinen kısıtları affeder; ancak çalışmayan temel vaatleri affetmez.
 3. **Temel bir sürüm etiketi (Git tag) basıldı mı?** `v0.1.0` etiketi oluşturularak GitHub Releases üzerinde sürüm notları paylaşıldı mı?
 
+</details>
+
 ## v0.1 için beklememeniz gereken durumlar
+
+:::warning[Bunlar yayını geciktirme sebebi değildir]
 
 - "Tasarım henüz istediğim kadar şık değil."
 - "Birim test kapsamı (coverage) henüz %90 olmadı."
 - "Tüm olası ortamlarda ve platformlarda kusursuz çalışana kadar bekleyelim." (Hedef platformlarınızı açıkça sınırlayın —örneğin sadece Linux/macOS veya Node 20+— o kapsamı test edip sürümü çıkarın; diğer ortamları yol haritasına bırakın).
 - "Birkaç özellik daha ekleyip öyle çıkalım."
+
+:::
 
 ## İyi örnek
 

@@ -8,7 +8,19 @@ sidebar_position: 2
 
 Bir fikri küçültmek, vizyonunuzdan vazgeçmek demek değildir; **vizyon ile ilk sürüm arasındaki farkı net bir şekilde ayırmak** demektir.
 
+:::warning
+
 Açık kaynak projelerin yarım kalmasının bir numaralı sebebi teknik yetersizlik değil, bitirilemeyecek kadar büyük kurgulanan ilk hedeflerdir. İlk sürüm her şeyi yapan devasa bir platform değil, tek bir şeyi kusursuz ve basitçe çözen bir çekirdek olmalıdır.
+
+:::
+
+```mermaid
+flowchart TD
+  V["Vizyon: tüm fikirler"] --> Q{"Bu olmadan proje<br/>işe yarar mı?"}
+  Q -- "Hayır, şart" --> C["v0.1 çekirdeği"]
+  Q -- "Evet, yarar" --> I["İleride Düşünülecekler<br/>(Icebox Issue)"]
+  I -. "çekirdek çalışınca" .-> V
+```
 
 ## Ne zaman?
 

@@ -10,6 +10,19 @@ Büyük bir işi parçalara ayırmanın en sağlıklı yolu, teknik katmanlara (
 
 Haftalarca süren ve yüzlerce dosya değiştiren devasa iş paketleri, code review süreçlerini kilitler ve takım içi iletişimi zayıflatır.
 
+<div className="comparison-grid">
+  <div className="comparison-box comparison-bad">
+    <div className="comparison-title">❌ Katmanlara göre</div>
+    <p>Önce tüm veritabanı, sonra tüm API, en son tüm arayüz.</p>
+    <small>⚠️ Son parça birleşene kadar kullanıcı hiçbir şey göremez; ara adımlar test edilemez.</small>
+  </div>
+  <div className="comparison-box comparison-good">
+    <div className="comparison-title">✅ Sonuçlara göre</div>
+    <p>Her parça veri, API ve arayüzü birlikte içeren tek bir kullanıcı davranışıdır.</p>
+    <small>✓ Her parça birleştirildiği anda test edilebilir ve kullanılabilir.</small>
+  </div>
+</div>
+
 ## Ne zaman?
 
 - Bir görevin tamamlanması 3-4 günden fazla sürecek gibi göründüğünde,

@@ -1,0 +1,71 @@
+.checklist {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  padding: 1rem 1.1rem;
+  margin: 1.5rem 0;
+  background-color: var(--ifm-background-surface-color);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.5rem;
+}
+
+.count {
+  font-variant-numeric: tabular-nums;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.9rem;
+}
+
+.bar {
+  height: 6px;
+  border-radius: 3px;
+  background-color: var(--ifm-color-emphasis-200);
+  overflow: hidden;
+  margin-bottom: 0.75rem;
+}
+
+.fill {
+  height: 100%;
+  background-color: var(--ifm-color-primary);
+  transition: width 0.2s ease;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.list li + li {
+  margin-top: 0.35rem;
+}
+
+.list label {
+  display: flex;
+  gap: 0.6rem;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.list input {
+  margin-top: 0.3rem;
+  accent-color: var(--ifm-color-primary);
+}
+
+.done span {
+  color: var(--ifm-color-emphasis-600);
+  text-decoration: line-through;
+}
+
+.ready {
+  margin-top: 0.75rem;
+  font-weight: 600;
+  color: var(--ifm-color-success-darker);
+}
+
+[data-theme='dark'] .ready {
+  color: var(--ifm-color-success-lighter);
+}

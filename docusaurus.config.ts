@@ -19,6 +19,10 @@ const config: Config = {
 
   onBrokenLinks: 'throw',
 
+  markdown: {
+    mermaid: true,
+  },
+
   i18n: {
     defaultLocale: 'tr',
     locales: ['tr'],
@@ -41,6 +45,7 @@ const config: Config = {
   ],
 
   themes: [
+    '@docusaurus/theme-mermaid',
     [
       require.resolve('@easyops-cn/docusaurus-search-local'),
       /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
@@ -159,6 +164,9 @@ const config: Config = {
         },
       ],
       copyright: `Octacity Docs bir kurallar kitabı değildir. Pratik bir saha rehberidir. © ${new Date().getFullYear()} Octacity.`,
+    },
+    mermaid: {
+      theme: {light: 'neutral', dark: 'dark'},
     },
     prism: {
       theme: prismThemes.github,

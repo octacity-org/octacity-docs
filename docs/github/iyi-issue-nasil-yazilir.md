@@ -45,6 +45,9 @@ Bir Issue açarken "hata var çalışmıyor" veya "şunu eklesek iyi olur" gibi 
 
 ## Örnek Issue şablonu
 
+<Tabs>
+<TabItem value="bug" label="Hata (bug)" default>
+
 ```markdown
 ### Problem
 `parseConfig` fonksiyonu, JSON dosyasında fazladan virgül (trailing comma) olduğunda sessizce `null` dönüyor ve uygulamanın çökmesine yol açıyor.
@@ -59,6 +62,27 @@ Sessizce çökmek yerine, dosya yolunu ve satır numarasını belirten açıklay
 ### Kapsam Dışı
 Bu issue kapsamında otomatik JSON düzeltme (auto-fix) yapılmayacaktır; yalnızca hata mesajı netleştirilecektir.
 ```
+
+</TabItem>
+<TabItem value="feature" label="Özellik (feature)">
+
+```markdown
+### Problem
+Kullanıcılar profil sayfasında yalnızca varsayılan avatarı görebiliyor; kendi fotoğraflarını ekleyemiyor.
+
+### Önerilen Çözüm
+Profil sayfasına JPEG avatar yükleme alanı eklenmeli. Yüklenen avatar sayfa yenilendiğinde de görünmeli.
+
+### Kabul Kriterleri
+- 2 MB'tan büyük veya JPEG olmayan dosyalar açıklayıcı bir hata ile reddedilir.
+- Yüklenen avatar profil sayfasında ve üst menüde görünür.
+
+### Kapsam Dışı
+Avatar kırpma ve PNG/GIF desteği bu issue kapsamında değildir.
+```
+
+</TabItem>
+</Tabs>
 
 ## Sık yapılan hatalar
 

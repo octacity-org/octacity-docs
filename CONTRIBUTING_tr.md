@@ -15,6 +15,12 @@ Bir rehber yazarken veya güncellerken şu prensipleri göz önünde bulundurun:
 3. **Fikir Belirten, Katı Olmayan (Opinionated, not absolute):** "Octacity'de genellikle şunu öneriyoruz" demekten çekinmeyin, ancak bunun tek doğru yol olduğunu iddia etmeyin.
 4. **Resmi Yönetişimi Kopyalamayın:** Octacity'nin kurumsal ve bağlayıcı kuralları `octacity-org/.github` deposundadır. Kuralları dokümantasyona kopyalamak yerine link verin.
 5. **Kısa ve Odaklı:** Bir rehber tek bir pratik soruyu çözmelidir. Devasa bölümler yerine odaklı sayfaları tercih edin.
+6. **Tekrarsız Görseller:** Her sayfa için içeriğine uyan öğeyi seçin; aynı bilgiyi ne metin ne görsel olarak iki kez göstermeyin. Her sayfanın aynı kalıba girmesi de bir tekrardır.
+   - ` ```mermaid ` diyagramı: yalnızca metnin göstermediği bir sıra, döngü veya dallanma varsa. Bir listeyi kutulara çevirmek için kullanmayın.
+   - `<div className="steps">`: yalnızca sırası önemli olan adımlar için. İlke ve sorumluluk listeleri düz liste kalır.
+   - `:::tip[Kısaca]` özeti: yalnızca uzun sayfalarda ve açılış cevabını tekrarlamadan.
+   - `:::info`, `:::warning`, `:::danger`: metni taşıyan kutu olarak; aynı cümleyi kutuda tekrarlamak için değil.
+   - `comparison-grid` iyi/kötü örnekler, tablolar kavram karşılaştırmaları, `<Checklist>` okuyucunun işaretleyeceği listeler, `<details>` uzun örnekler, `<Tabs>` / `<TabItem>` alternatif varyantlar içindir.
 
 ---
 

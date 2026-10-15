@@ -25,17 +25,27 @@ Ekip projelerinde en büyük risk, herkesin kafasında farklı bir ürün canlan
 
 ## İyi örnek
 
-> Üç kişilik bir ekip bir CLI aracı geliştirecek:
-> - **Hizalanma:** "İlk hedefimiz yerel bir YAML dosyasını okuyup formatlayan bir komut satırı aracı çıkarmak."
-> - **Dağılım:**
->   - Geliştirici A: Argüman ayrıştırma (CLI parser) ve komut yapısı.
->   - Geliştirici B: YAML işleme mantığı ve hata kontrolleri.
->   - Geliştirici C: Test altyapısı, GitHub Actions CI ve temel README.
-> - Birinci hafta sonunda üçü de çalışan ortak bir ana dal (main branch) üzerinde buluşur.
+Üç kişilik bir ekip bir CLI aracı geliştirecek.
+
+**Hizalanma:** "İlk hedefimiz yerel bir YAML dosyasını okuyup formatlayan bir komut satırı aracı çıkarmak."
+
+| Kişi | Sahiplik alanı |
+| :--- | :--- |
+| Geliştirici A | Argüman ayrıştırma (CLI parser) ve komut yapısı |
+| Geliştirici B | YAML işleme mantığı ve hata kontrolleri |
+| Geliştirici C | Test altyapısı, GitHub Actions CI ve temel README |
+
+Birinci hafta sonunda üçü de çalışan ortak bir ana dal (main branch) üzerinde buluşur.
 
 ## Sık yapılan hatalar
 
-- **Gereksiz toplantı maratonları:** Saatlerce durum toplantısı (status meeting) yapmak yerine, haftada 2-3 gün chat veya GitHub Discussions üzerinden kısa asenkron durum güncellemeleri paylaşın *(Örn: "Dün ne bitti? Bugün ne yapıyorum? Bloker var mı?")*. Toplantıları sadece çözülemeyen teknik kilitlenmeler için kullanın.
+- **Gereksiz toplantı maratonları:** Saatlerce durum toplantısı (status meeting) yapmak yerine, haftada 2-3 gün chat veya GitHub Discussions üzerinden kısa asenkron durum güncellemeleri paylaşın. Toplantıları sadece çözülemeyen teknik kilitlenmeler için kullanın.
+
+  ```text
+  Dün ne bitti?      YAML parser hata mesajları
+  Bugün ne yapıyorum? --check bayrağı
+  Bloker var mı?     Yok
+  ```
 - **Herkesin her şeye karar vermeye çalışması:** Küçük teknik detaylarda bile uzlaşma arayarak karar mekanizmasını felç etmek.
 - **Sessizce işi bloklamak:** Yoğunluk, sınavlar veya aksilikler yüzünden verilen görevi yapamayacak olmak açık kaynakta çok doğaldır ve sorun teşkil etmez; asıl sorun bunu ekibe haber vermeyip görevi rehin tutarak başkalarının ilerlemesini kilitlemektir. Yapamayacağınızı hissettiğiniz anda durumu ekibe bildirin.
 

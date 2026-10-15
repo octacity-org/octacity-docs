@@ -6,6 +6,13 @@ sidebar_position: 3
 
 # İyi bir Pull Request nasıl hazırlanır?
 
+:::tip[Kısaca]
+
+- Açıklamada "ne" ve "neden"i yazın, Issue'yu `Closes #42` ile bağlayın, nasıl test ettiğinizi ekleyin.
+- Göndermeden önce kendi diff'inizi okuyun; commit'lerde Conventional Commits kullanın.
+
+:::
+
 İyi bir Pull Request (PR), **inceleyenin (reviewer) aklında soru işareti bırakmadan, tek bir mantıksal değişikliği anlaşılır şekilde sunan** PR'dır.
 
 Bir PR'ın kalitesi sadece yazdığınız kodla değil, o kodu inceleyecek takım arkadaşınıza gösterdiğiniz özenle ölçülür.
@@ -16,6 +23,16 @@ Bir PR'ın kalitesi sadece yazdığınız kodla değil, o kodu inceleyecek takı
 - Kod tabanına birleştirilmek üzere inceleme talep edeceğinizde.
 
 ## Nasıl yapmalıyım?
+
+```mermaid
+flowchart LR
+  A["Draft PR"] --> B["Self-review<br/>Files changed"]
+  B --> C["Ready for review"]
+  C --> D["Code review"]
+  D -- "değişiklik istendi" --> E["Düzeltme commit'leri"]
+  E --> D
+  D -- "onay" --> F["Merge"]
+```
 
 1. **Tek bir amaca odaklanın (Single responsibility):** Bir PR içinde hem yeni bir özellik ekleyip, hem alakasız bir dosyanın kod biçimini (formatting) düzeltip, hem de bağımlılıkları güncellemeyin.
 2. **"Ne" ve "Neden"i açıklayın:** Kod *neyin* değiştiğini söyler; PR açıklaması ise bunun *neden* yapıldığını açıklamalıdır.
@@ -53,17 +70,29 @@ Octacity dokümanlarında ve projelerinde yaygın kabul gören [Conventional Com
 | `chore` | Bağımlılıklar, CI veya yardımcı araç değişikliklerinde | `chore(deps): update bun to v1.4.2` |
 | `style` | Kodun çalışmasını etkilemeyen biçimlendirme / boşluk düzeltmelerinde | `style(css): align grid margins` |
 
+### Commit mesajını deneyin
+
+Alanları doldurun; mesaj aşağıda oluşur ve sık yapılan biçim hataları işaretlenir.
+
+<CommitBuilder />
+
 ### İyi Bir Commit Mesajı İçin Altın Kurallar
 
 1. **Emir kipi (Imperative mood) kullanın:** Mesajınız *"added feature"* veya *"adds feature"* değil, bir komut gibi *"add feature"* olmalıdır (*"Bu commit uygulandığında projeye ne yapar?"* sorusunun yanıtıdır).
 2. **Küçük harfle başlayın ve sonuna nokta koymayın:** `feat(ui): add dark mode switch` (✅), `Feat(ui): Add dark mode switch.` (❌).
 3. **Atomik commit prensibi:** Her commit tek bir mantıksal değişikliği temsil etmelidir. 5 alakasız görevi tek bir devasa commit'e sıkıştırmayın; aynı zamanda kodu bozan yarım adımları da ayrı commit yapmayın.
-4. **Kırıcı değişiklikler (Breaking Changes):** Geriye dönük uyumluluğu bozan bir değişiklik varsa tipin sonuna `!` ekleyin veya gövdede belirtin:
-   ```text
-   feat(api)!: remove deprecated v1 user endpoint
 
-   BREAKING CHANGE: The /v1/users endpoint has been removed. Use /v2/users instead.
-   ```
+:::warning[Kırıcı değişiklikler (Breaking Changes)]
+
+Geriye dönük uyumluluğu bozan bir değişiklik varsa tipin sonuna `!` ekleyin veya gövdede belirtin:
+
+```text
+feat(api)!: remove deprecated v1 user endpoint
+
+BREAKING CHANGE: The /v1/users endpoint has been removed. Use /v2/users instead.
+```
+
+:::
 
 ## Karşılaştırma
 
@@ -86,6 +115,9 @@ Octacity dokümanlarında ve projelerinde yaygın kabul gören [Conventional Com
 
 ## İyi bir PR açıklaması örneği
 
+<details>
+<summary>Örnek PR açıklamasını göster</summary>
+
 ```markdown
 ## Açıklama
 Kullanıcı giriş yaparken şifresini yanlış girdiğinde oluşan genel sunucu hatası (500) düzeltildi. Artık uygun şekilde 401 Unauthorized ve açıklayıcı hata mesajı dönüyor.
@@ -103,6 +135,8 @@ Closes #84
 ## Ekran Görüntüsü
 *(Arayüz değişikliği varsa eklenir)*
 ```
+
+</details>
 
 ## Sık yapılan hatalar
 

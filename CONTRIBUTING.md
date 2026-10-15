@@ -17,6 +17,12 @@ When authoring or updating a guide, keep the following principles in mind:
 3. **Opinionated, Not Absolute:** It is completely fine to say *"At Octacity, we usually recommend..."*, without claiming it is the only universal truth. Explain tradeoffs and state the preferred default.
 4. **Do Not Duplicate Governance:** Official organization governance, Code of Conduct policies, and binding rules live in [octacity-org/.github](https://github.com/octacity-org/.github). Always link to `.github` instead of copying policy text.
 5. **Short and Focused:** Each guide should address one concrete problem. Prefer multiple focused guides over exhaustive chapters.
+6. **Visuals Without Repetition:** Pick the element that fits each page's content, and never show the same information twice, as text or as a visual. Giving every page the same shape is repetition too.
+   - A ` ```mermaid ` diagram only when there is an order, loop, or branch the text does not already show. Do not use it to redraw a list as boxes.
+   - `<div className="steps">` only for steps whose order matters. Lists of principles or responsibilities stay plain lists.
+   - A `:::tip[Kısaca]` summary only on long pages, without restating the opening answer.
+   - `:::info`, `:::warning`, `:::danger` boxes hold the text; they do not repeat a sentence that is already there.
+   - `comparison-grid` is for good/bad examples, tables for comparing concepts, `<Checklist>` for lists readers tick off, `<details>` for long examples, and `<Tabs>` / `<TabItem>` for alternative variants.
 
 ---
 

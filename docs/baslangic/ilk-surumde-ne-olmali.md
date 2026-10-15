@@ -18,6 +18,25 @@ v0.1'in eksiksiz olması beklenmez; ancak **kullanılabilir** olması şarttır.
 
 ### Olması gerekenler
 
+Kendi projeniz için işaretleyin; işaretleriniz bu tarayıcıda saklanır.
+
+<Checklist
+  id="ilk-surum"
+  title="v0.1 olmazsa olmazları"
+  items={[
+    'Çalışan çekirdek işlev',
+    'README: proje ne işe yarar?',
+    'README: nasıl kurulur ve çalıştırılır?',
+    'README: 1 dakikalık hızlı kullanım örneği',
+    'Kritik akışı doğrulayan temel testler',
+    'LICENSE dosyası',
+    'Temel .gitignore',
+  ]}
+/>
+
+<details>
+<summary>Her maddenin açıklaması</summary>
+
 1. **Çalışan çekirdek işlev:** Aracın ana vaadi olan işlemi hatasız yerine getirmesi.
 2. **Minimum dokümantasyon (README):**
    - Proje ne işe yarar?
@@ -26,6 +45,8 @@ v0.1'in eksiksiz olması beklenmez; ancak **kullanılabilir** olması şarttır.
 3. **Temel testler:** Kritik iş akışının bozulmadığını doğrulayan birkaç uçtan uca veya birim testi.
 4. **Lisans dosyası:** Projenin açık kaynak haklarını belirten geçerli bir lisans (`LICENSE`).
 5. **Temel `.gitignore`:** Derleme çıktıları ve gizli anahtarların depoya girmesini engelleyen dosya.
+
+</details>
 
 ### Kesinlikle ertelenebilecekler
 
@@ -37,10 +58,13 @@ v0.1'in eksiksiz olması beklenmez; ancak **kullanılabilir** olması şarttır.
 
 ## İyi örnek
 
-> Temsili bir API mocklama aracı (`mock-api`) için v0.1:
-> - Bir JSON dosyasından okuyup yerel HTTP sunucusu açar (`GET` isteklerine yanıt verir).
-> - README içinde kurulum ve temel çalıştırma talimatları (örn. `mock-api data.json`) açıklanmıştır.
-> - `POST`, `PUT`, dinamik veri üretimi ve GUI arayüzü v0.2 ve sonrasına bırakılmıştır.
+:::info[Temsili bir API mocklama aracı (`mock-api`) için v0.1]
+
+- Bir JSON dosyasından okuyup yerel HTTP sunucusu açar (`GET` isteklerine yanıt verir).
+- README içinde kurulum ve temel çalıştırma talimatları (örn. `mock-api data.json`) açıklanmıştır.
+- `POST`, `PUT`, dinamik veri üretimi ve GUI arayüzü v0.2 ve sonrasına bırakılmıştır.
+
+:::
 
 ## Sık yapılan hatalar
 
