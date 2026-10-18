@@ -21,9 +21,9 @@ const SECTIONS: SectionCard[] = [
   },
   {
     title: 'GitHub ile Çalışmak',
-    description: 'Etkili Issue açmak, işleri parçalamak, iyi PR hazırlamak ve code review yapmak.',
+    description: 'Etkili Issue açmak, işleri parçalamak, iyi PR hazırlamak, code review yapmak ve label ile milestone kullanmak.',
     link: '/docs/github/iyi-issue-nasil-yazilir',
-    count: '4 Rehber',
+    count: '5 Rehber',
   },
   {
     title: 'Takım Olarak Çalışmak',

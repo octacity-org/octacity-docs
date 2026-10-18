@@ -21,7 +21,7 @@ Açık kaynakta maintainer'lık, kod yazmaktan ziyade bir editörlük, küratör
 2. **İş akışını açık tutmak:** Gelen PR'ları makul sürelerde incelemek, tıkanıklıkları gidermek ve ana dalı stabil tutmak.
 3. **Karar almak:** Teknik fikir ayrılıklarında tartışmayı sonsuza kadar uzatmadan projenin ilkelerine uygun kararı vermek.
 4. **Katkıcı deneyimini gözetmek:** Yeni bir geliştirici katkı sağladığında ona yol göstermek, geri bildirimleri netleştirmek ve topluluğu teşvik etmek.
-5. **Her şeyi tek başına yapmamak:** Maintainer her hatayı kendisi çözmek zorunda değildir; sorunu netleştirip `good first issue` veya `help wanted` etiketiyle topluluğa açabilir.
+5. **Her şeyi tek başına yapmamak:** Maintainer her hatayı kendisi çözmek zorunda değildir; sorunu netleştirip `good first issue` veya `help wanted` etiketiyle topluluğa açabilir ([Label ve milestone nasıl kullanılır?](../github/label-ve-milestone-nasil-kullanilir.md)).
 
 ## İyi bir maintainer davranışı örneği
 

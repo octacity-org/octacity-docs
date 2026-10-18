@@ -26,6 +26,7 @@ const sidebars: SidebarsConfig = {
         'github/isi-nasil-parcalarim',
         'github/iyi-pr-nasil-hazirlanir',
         'github/code-review-nasil-yapilir',
+        'github/label-ve-milestone-nasil-kullanilir',
       ],
     },
     {
